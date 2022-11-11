@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+    --header-height: 3.5rem;
+    --first-color: hsl(354, 78%, 60%);
+    --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 21%);
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 55%);
+    --body-color: hsl(206, 4%, 97%);
+    --container-color: #fff;
+    --border-color: hsl(0, 0%, 94%);
+    --body-font: 'Roboto', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*-first-color: hsl(182, 53%, 74%);
+  --button-color: hsl(246, 16%, 12%);
+  --button-color-alt: hsl(0, 0%, 28%);
+  --card-color: hsla(246, 16%, 5%, .5);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: hsl(249, 19%, 14%);
+  --container-color: hsl(246, 16%, 12%);
+  --border-color: hsl(0, 0%, 20%); variables dark*/
+    
+}
+
+    :root {
+      --biggest-font-size: 2.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+    
+
+body{
+    margin: 0;
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--body-font);
+  
+}
+
+.navbar{
+    
+    display: flex;
+    place-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #FFF;
+    height: auto;
+    width: auto;
+    
+    
+}
+
+.carrito{
+    color: black;
+}
+
+
+.img1{
+    float: left;
+    margin: auto;
+}
+.tienda{
+text-decoration: none;
+padding: 3em;
+margin: auto;
+color: var(--title-color);
+}
+.tienda-moon{
+    margin: auto;
+}
+.hogar{
+text-decoration: none;
+padding: 2em;
+color: var(--text-color);
+}
+.nav{
+    padding-left: 3em;
+    text-align: center;
+    margin-left: 10px;
+}
+.hogar:hover{
+    color: var(--first-color);
+}
+.prod1{
+    text-decoration: none;
+   
+    color: var(--first-color);
+}
+.tienda-moon a{
+ float: right;
+}
+.switch{
+    background-color: rgb(0, 0, 0);
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    float: right;
+    
+    
+}
+
+::after{
+content:"";
+display: block;
+width: 30px;
+height: 30px;
+position: absolute;
+background: rgb(255, 255, 255);
+top: 0;
+left: 0;
+right: unset;
+border-radius: 100px;
+transition: .3s ease all;
+box-shadow: 0px opx 2px 2px rgb(255, 255, 255) ;
+}
+::after{
+    background: rgb(255, 255, 254);
+    color: rgb(255, 255, 255);
+    right:0 ;
+    left: unset;
+}
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #FFF;
+}
+.div-1{
+    padding: 3em;
+}
+
+.container-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    background-color: var(--body-color);
+    
+
+}
+.img{
+    background-color: var(--first-color);
+    grid-column: 2;
+    
+    grid-row: 1;
+}
+.titulo{
+grid-column: 1;
+margin-top: auto;
+grid-row: 1;
+font-size: var(--h1-font-size);
+color: var(--title-color);
+}
+
+.parrafo{
+    grid-column: 1;
+    margin: auto;
+    grid-row: 1;
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    margin-bottom: 1em;
+}
+.parrafo2{
+    grid-column: 1;
+    margin: auto;
+    grid-row: 1;
+    color: var(--first-color);
+    font-size: 1.5em;
+    
+}
+.a1{
+    grid-column: 1;
+    margin: auto;
+    grid-row: 1;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 75%);
+    color: var(--button-color);
+    height: 50px;
+    width: 80px;
+    border: none;
+    font-size: 15px;
+
+}
+.a2{
+    grid-column: 1;
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--button-color);
+    color: #FFF;
+    padding: 1.25rem 2rem;
+    font-weight: var(--font-medium);
+    transition:.3s;
+    box-shadow: 0 12px 24px hsla(0, 0%, 10%, .2);
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    
+      
+    
+}
+
+.a2 :hover{
+    background-color: hsl(0, 0%, 63%);
+  }
+.container-2{
+display: grid;
+gap: 1.5rem;
+justify-content: center;
+align-content: center;
+text-align: center;
+margin-bottom: 3.5rem;
+grid-template-columns: repeat(4, 1fr);
+margin-top: 10em;
+
+
+}
+.ul{
+list-style: none;
+
+}
+
+.a .li-1{
+    grid-column: 1/4;
+    
+    
+
+}
+.a .li-2{
+    grid-column: 2/4;
+    
+
+    
+}
+.a .li-3{
+    grid-column: 3/4;
+    
+}
+.a .li-4{
+    grid-column: 4/4 ;
+   
+    
+}
+.container-2 a{
+    text-decoration: none;
+    
+}
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    column-gap: 10em;
+    padding: 4rem 0 10rem;
+    
+}
+.camisa{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 75rem;
+    
+}
+.camisa2{
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+.sudadera{
+    grid-column: 3;
+    grid-row: 1;
+}
+.negro{
+    color: black;
+    border-left: gray 30px;
+}
+
+.gris{
+    color: var(--text-color);
+}
+.span{
+    color: black;
+}
+.caja-gris{
+    background-color: rgb(236, 232, 232);
+    border-radius: .75rem;
+    border-right: none;
+}
+.caja-gris img{
+    height: 200px;
+    margin: auto;
+    
+}
+.caja-blanca{
+    background-color: #FFF;
+    height: 100px;
+    margin: auto;
+    border-radius: .75rem;
+   
+}
+
+.agregar{
+    border-radius: 60px;
+    cursor: pointer;
+    float:right;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size:30px;
+}
+.griss{
+    color:var(--text-color);
+    font-size: 18px;
+}
+
+.container-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(236, 232, 232);
+    width: 100vw;
+    height: 70vh;
+    padding-top: 6em;
+}
+
+.nuestra-info{
+    grid-column: 1;
+    text-align: center;
+}
+.info{
+    grid-column: 1; 
+    
+}
+.toluca{
+    color: var(--text-color-light);
+    font-size: 1rem;
+}
+
+.sobre-nosotros{
+    grid-column: 2;  
+    text-align: center;
+}
+
+.producto{
+    grid-column: 3;
+    text-align: center;
+}
+
+.social{
+    grid-column: 4;
+    text-align: center;
+}
+.soc a{
+    grid-column: 4;
+}
+
+.SN a{
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+.prod a{
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.footer{
+    text-align: center;
+    padding: 2em;
+}
